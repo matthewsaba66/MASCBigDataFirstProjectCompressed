@@ -22,9 +22,10 @@ public class SoldProductsMapper extends
 		
 		
 		String line = value.toString();
-		String products = line.substring(10, line.length());
+		String regex = "(19|20)[0-9][0-9][--.]([0-9]|[1][0-2])[--.]([0-9]|1[0-9]|2[0-9]|3[0-1]),";
+		line = line.replaceAll(regex, "");
 		
-		StringTokenizer tokenizer = new StringTokenizer(products);
+		StringTokenizer tokenizer = new StringTokenizer(line, ",");
 
 		while (tokenizer.hasMoreTokens()) {
 			word.set(tokenizer.nextToken());
