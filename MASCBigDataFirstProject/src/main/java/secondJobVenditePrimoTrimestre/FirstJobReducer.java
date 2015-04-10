@@ -12,7 +12,7 @@ import org.apache.hadoop.mapreduce.Reducer;
 import org.apache.hadoop.mapred.Reporter;
 import org.apache.hadoop.mapreduce.Mapper.Context;
 
-public class ThreeSellReducer extends Reducer<Text, IntWritable, Text, IntWritable> {
+public class FirstJobReducer extends Reducer<Text, IntWritable, Text, IntWritable> {
 	public void reduce(Text key, Iterable<IntWritable> values,
 			Context context) throws IOException, InterruptedException {
 
