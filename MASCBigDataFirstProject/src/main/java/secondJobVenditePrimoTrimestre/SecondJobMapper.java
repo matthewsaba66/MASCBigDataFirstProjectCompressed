@@ -17,12 +17,13 @@ public class SecondJobMapper extends Mapper<LongWritable, Text, Text, Text> {
 		
 		String line = value.toString();
 		
-		//StringTokenizer tokenizer = new StringTokenizer(line," ");
+		line = line.replace("\t", ":");
 		
-		String 
+		StringTokenizer tokenizer = new StringTokenizer(line," ");
+		word.set(tokenizer.nextToken());
 		
-		
-			context.write(word, new Text());
+		context.write(word, new Text(tokenizer.nextToken()));
+		//context.write(new Text("eseguito map"), new Text("eseguito Map"));
 		}
 			
 	
