@@ -36,7 +36,7 @@ public class FirstJobMapper extends Mapper<LongWritable, Text, Text, IntWritable
 			   for (int j = i+1; j < list.size(); j++) {
 			       String ei = list.get( i);
 			       String ej = list.get( j);
-			       String conc = ei + ", " + ej;
+			       String conc = ei + "," + ej;
 			       word.set(conc);
 			       context.write(word, one);
 			   }
