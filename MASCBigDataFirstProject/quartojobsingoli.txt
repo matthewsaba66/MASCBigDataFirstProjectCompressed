@@ -1,0 +1,8 @@
+dolce	315
+formaggio	327
+insalata	318
+latte	331
+pane	338
+pesce	320
+uova	322
+vino	318
