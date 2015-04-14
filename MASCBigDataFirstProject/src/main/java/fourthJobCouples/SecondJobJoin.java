@@ -21,7 +21,7 @@ public class SecondJobJoin {
 		JobConf conf = new JobConf(SecondJobJoin.class);
         conf.setJobName("SecondJobJoin");
         
-        FileInputFormat.addInputPath(conf, new Path(args[0]));
+        //FileInputFormat.addInputPath(conf, new Path(args[0]));
         MultipleInputs.addInputPath(conf, new Path(args[0]), TextInputFormat.class, SecondJobJoinMapperFile1.class);
         MultipleInputs.addInputPath(conf, new Path(args[1]), TextInputFormat.class, SecondJobJoinMapperFile2.class);
         FileOutputFormat.setOutputPath(conf, new Path(args[2]));

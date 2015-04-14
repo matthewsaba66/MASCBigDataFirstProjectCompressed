@@ -1,0 +1,8 @@
+dolce,315	insalata,231 latte,238 pane,240 formaggio,235 pesce,237 uova,235 vino,236 
+formaggio,327	pane,251 dolce,235 insalata,226 latte,240 pesce,232 uova,236 vino,234 
+insalata,318	dolce,231 formaggio,226 latte,238 pane,239 pesce,232 uova,236 vino,228 
+latte,331	vino,232 uova,246 pesce,234 pane,243 insalata,238 formaggio,240 dolce,238 
+pane,338	dolce,240 vino,245 uova,248 pesce,248 latte,243 insalata,239 formaggio,251 
+pesce,320	formaggio,232 insalata,232 latte,234 dolce,237 pane,248 uova,231 vino,231 
+uova,322	latte,246 dolce,235 formaggio,236 insalata,236 pane,248 pesce,231 vino,235 
+vino,318	dolce,236 formaggio,234 insalata,228 latte,232 pane,245 pesce,231 uova,235 
