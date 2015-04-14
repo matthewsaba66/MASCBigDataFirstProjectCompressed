@@ -59,7 +59,7 @@ public class ThirdJobCouplesReducer extends Reducer<Text, DoubleWritable,   Text
 		for (int i = topKPairs.size() - 1; i >= 0; i--) {
 			Pair topKPair = topKPairs.get(i);
 			
-			context.write(new Text(topKPair.str), new DoubleWritable(topKPair.count));
+			context.write(new Text(topKPair.str),new DoubleWritable( topKPair.count ));
 		}
 	}
 	
