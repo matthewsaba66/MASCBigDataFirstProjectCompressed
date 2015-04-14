@@ -11,14 +11,19 @@ import org.apache.hadoop.mapred.OutputCollector;
 import org.apache.hadoop.mapred.Reporter;
 
 
-public class SecondJobJoinMapper extends MapReduceBase 
-	implements Mapper<LongWritable, Text, Text, IntWritable> {
+public class SecondJobJoinMapperFile1 extends MapReduceBase 
+implements Mapper<LongWritable, Text, Text, Text> {
 
 	public void map(LongWritable key, Text value,
-			OutputCollector<Text, IntWritable> output, Reporter reporter)
-			throws IOException {
-		// TODO Auto-generated method stub
-		
+			OutputCollector<Text, Text> output, Reporter reporter)
+					throws IOException {
+		String line=value.toString();
+		String[] words=line.split("\t");
+		Text word = new Text(words[0]);
+		Text number = new Text((words[1]));
+		output.collect(word, number);
 	}
 
 }
+
+
